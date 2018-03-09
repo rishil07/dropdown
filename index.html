@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>thenewboston</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+    <style>
+        .navbar {
+            margin-bottom: 0;
+            border-radius: 0;
+            background-color: black;
+            color: #FFF;
+            padding: 1% 0;
+            font-size: 1.2em;
+            border:0;
+        }
+
+        .navbar-brand{
+            float: left;
+            min-height: 55px;
+            padding: 0 15px 5px;
+        }
+
+        .navbar-inverse .navbar-nav .active a, .navbar-inverse .navbar-nav .active a:focus,
+        .navbar-inverse .navbar-nav .active a:hover {
+            color: #FFF;
+            background-color: black;
+        }
+
+        .navbar-inverse .navbar-nav li a{
+            color: lightblue;
+        }
+
+        .carousel-caption {
+            top:50%;
+            transform: translateY(-50%);
+            text-transform: uppercase;
+        }
+
+        .btn {
+            font-size: 18px;
+            color: white;
+            padding: 12px 22px;
+            background: black;
+            border: 2px solid white;
+        }
+
+        .container {
+            margin: 4% auto;
+        }
+
+        #icon {
+            max-width: 200px;
+            margin: 1% auto;
+        }
+
+        @media (max-width: 600px){
+            .carousel-caption {
+                display: none;
+            }
+
+            #icon {
+                max-width: 150px;
+            }
+
+            h2 {
+                font-size: 1.9em;
+            }
+        }
+
+        #qwe {
+            color: white;
+        }
+
+        #header{
+            right: 60%;
+            left: auto;
+            padding-bottom: 30px;
+            width: 250px;
+            background: rgba(0,0,0,0.5);
+            top: 50%;
+            border-radius: 18px;
+            bottom: auto;
+        }
+
+        #bt1{
+
+            padding: 20px;
+            width: 100px;
+            background: rgba(0,0,0,0.5);
+        }
+    </style>
+</head>
+<body>
+  <nav class="navbar navbar-inverse">
+      <div class="container-fluid">
+          <div class="navbar-header">
+              <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+                  <span class="icon-bar"></span>
+              </button>
+              <a class="navbar-brand" href="index.html"><img src="img1/11.png"></a>
+          </div>
+
+          <div class="collapse navbar-collapse" id="myNavbar">
+              <ul class="nav navbar-nav navbar-right">
+                  <li class="active"><a href="index.html">Home</a></li>
+                  <li><a href="page.html" class="button">Flats</a></li>
+                  <li><a href="#">Services</a></li>
+                  <li><a href="#">Contact</a></li>
+              </ul>
+          </div>
+      </div>
+  </nav>
+
+
+     <div id="myCarousel" class="carousel slide" data-ride="carousel">
+         <ol class="carousel-indicators">
+             <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+             <li data-target="#myCarousel" data-slide-to="1"></li>
+             <li data-target="#myCarousel" data-slide-to="2"></li>
+         </ol>
+
+         <div class="carousel-inner" role="listbox">
+             <div class="item active">
+                 <img src="img1/ronaldo.png" class="img-responsive">
+                 <div class="carousel-caption">
+                     <h1>Get to know pgcorp</h1>
+                     <br>
+                     <a href="page.html" class="button" id="bt1">Get started</a>
+                 </div>
+             </div> <!--end active-->
+            <div class="item">
+                <img src="img1/kalyan.png" class="img-responsive">
+
+                <div class="carousel-caption"><h2 id="header">NOW FLATS AVAILABLE IN KALYAN</h2></div>
+
+
+            </div>
+             <div class="item">
+                 <img src="img1/ronaldo.png">
+             </div>
+         </div>
+         <!--start slider controls-->
+         <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev">
+             <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+             <span class="sr-only">Previous</span>
+         </a>
+         <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next">
+             <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+             <span class="sr-only">Next</span>
+         </a>
+     </div> <!--end slider-->
+
+     <div class="container text-center">
+         <h2>WHAT WE ARE USING</h2>
+         <div class="row">
+             <div class="col-sm-4">
+                 <a href="https://www.w3schools.com/html/html5_intro.asp"><img src="img1/html.png" id="icon"></a>
+                 <h4>HTML</h4>
+             </div>
+             <div class="col-sm-4">
+                 <a href="https://www.w3schools.com/bootstrap/default.asp"><img src="img1/boot.png" id="icon"></a>
+                 <h4>BOOTSTRAP</h4>
+             </div>
+             <div class="col-sm-4">
+                 <a href="https://www.w3schools.com/css/"><img src="img1/CSS.png" id="icon"></a>
+                 <h4>css</h4>
+             </div>
+         </div>
+     </div>
+
+     <div class="container">
+       <div class="row">
+           <div class="col-md-6">
+               <h4>hackathon is dumb</h4>
+               <p>
+                   (board[7]  ==  board[8] ==  board[9] == player) or \
+                   (board[4] ==  board[5] ==  board[6] == player) or \
+                   (board[1] ==  board[2] ==  board[3] == player) or \
+                   (board[7] ==  board[4] ==  board[1] == player) or \
+                   (board[8] ==  board[5] ==  board[2] == player) or \
+                   (board[9] ==  board[6] ==  board[3] == player) or \
+                   (board[1] ==  board[5] ==  board[9] == player) or \
+                   (board[3] ==  board[5] ==  board[7] == player):
+               </p>
+               <p>
+                   (board[7]  ==  board[8] ==  board[9] == player) or \
+                   (board[4] ==  board[5] ==  board[6] == player) or \
+                   (board[1] ==  board[2] ==  board[3] == player) or \
+                   (board[7] ==  board[4] ==  board[1] == player) or \
+                   (board[8] ==  board[5] ==  board[2] == player) or \
+                   (board[9] ==  board[6] ==  board[3] == player) or \
+                   (board[1] ==  board[5] ==  board[9] == player) or \
+                   (board[3] ==  board[5] ==  board[7] == player):
+               </p>
+           </div>
+           <div class="col-md-6">
+               <img src="img1/capture.png" class="img-responsive">
+           </div>
+       </div>
+     </div>
+  <div class="container">
+      <div class="row">
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <h4>hackathon is not dumb</h4>
+              <p>
+                  (board[7]  ==  board[8] ==  board[9] == player) or \
+                  (board[4] ==  board[5] ==  board[6] == player) or \
+                  (board[1] ==  board[2] ==  board[3] == player) or \
+                  (board[7] ==  board[4] ==  board[1] == player) or \
+                  (board[8] ==  board[5] ==  board[2] == player) or \
+                  (board[9] ==  board[6] ==  board[3] == player) or \
+                  (board[1] ==  board[5] ==  board[9] == player) or \
+                  (board[3] ==  board[5] ==  board[7] == player):
+              </p>
+
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <img src="img1/ronaldo.png" class="img-responsive">
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <h4>hackathon is not dumb</h4>
+              <p>
+                  (board[7]  ==  board[8] ==  board[9] == player) or \
+                  (board[4] ==  board[5] ==  board[6] == player) or \
+                  (board[1] ==  board[2] ==  board[3] == player) or \
+                  (board[7] ==  board[4] ==  board[1] == player) or \
+                  (board[8] ==  board[5] ==  board[2] == player) or \
+                  (board[9] ==  board[6] ==  board[3] == player) or \
+                  (board[1] ==  board[5] ==  board[9] == player) or \
+                  (board[3] ==  board[5] ==  board[7] == player):
+              </p>
+
+          </div>
+          <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+              <img src="img1/ronaldo.png" class="img-responsive">
+          </div>
+
+
+      </div>
+  </div>
+ </body>
+</html>
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,24 @@
+body {
+    background: #D2D2D2;
+}
+a {
+    width: 35rem;
+    background: #185901;
+    display: block;
+    text-align: center;
+    font-size: 2rem;
+    color: #FFF;
+    text-decoration: none;
+    text-transform: uppercase;
+    padding: 0.25rem;
+    margin: 2rem auto;
+}
+
+a.button {
+    -webkit-appearance: button;
+    -moz-appearance: button;
+    appearance: button;
+
+    text-decoration: none;
+    color: initial;
+}
