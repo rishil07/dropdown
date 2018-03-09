@@ -1,0 +1,61 @@
+{% extends 'homepage/base.html '%}
+{% block body %}
+
+<!--Loading static files-->
+{% load staticfiles %}
+<link href="{% static 'homepage/page.css'%}">
+<!--End static files-->
+
+<title>
+{% block title %}
+Flats for sale
+{% endblock %}
+</title>
+<style>
+    #photo{
+        height:30vh;
+        width:40vh;
+    }
+</style>
+<div class="container" id="head">
+   <div class="row">
+       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 try">
+           <h3>NAME</h3>
+       </div>
+       <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 try">
+           <h3>PRICE</h3>
+       </div>
+
+   </div>
+</div>
+
+<div class="container" id="con">
+    {% for flat in Flats%}
+    <div class="row">
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12">
+              <img src="{{ flat.image.url}}" id="photo">
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 try">
+              <h4>Owner :-{{ flat.owner_name }}</h4>
+              <h4>Address</h4><br>
+              <p>
+                    {{ flat.address }}
+              </p>
+              <h4>Owner Details :- {{ flat.about_owner }}</h4>
+              <h4>Owner Contact :- {{ flat.owner_contact }}</h4>
+          </div>
+
+          <div class="col-lg-4 col-md-4 col-sm-6 col-xs-12 try" >
+             <h4>Price</h4>
+               {{ flat.price }}
+          </div>
+        <br>
+        <button class="btn btn-success btn-lg"><span class="glyphicon glyphicon-usd"> Buy</span></button>
+    </div>
+    {% endfor %}
+</div>
+{% endblock %}
